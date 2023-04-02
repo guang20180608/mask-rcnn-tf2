@@ -259,7 +259,7 @@ if __name__ == "__main__":
         epoch_step_val  = num_val // batch_size
 
         train_dataloader    = COCODetection(train_image_path, train_coco, num_classes, anchors, batch_size, config, COCO_LABEL_MAP, Augmentation(config.IMAGE_SHAPE))
-        val_dataloader      = COCODetection(val_image_path, train_coco, num_classes, anchors, batch_size, config, COCO_LABEL_MAP, Augmentation(config.IMAGE_SHAPE))
+        val_dataloader      = COCODetection(val_image_path, val_coco, num_classes, anchors, batch_size, config, COCO_LABEL_MAP, Augmentation(config.IMAGE_SHAPE))
 
         #-------------------------------------------------------------------------------#
         #   训练参数的设置
